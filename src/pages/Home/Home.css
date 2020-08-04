@@ -1,6 +1,12 @@
 .img-card {
   padding-top: 5rem;
+  padding-bottom: 5rem;
   margin: 0 auto;
   width: 600px;
   margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.calendar{
+  margin: 0 auto;
 }
