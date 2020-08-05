@@ -78,6 +78,7 @@ function Home() {
 			console.log('ferch today')
 			data = await fetch(url)
 		} else {
+			console.log(newDate)
 			const localDate = url + '&date=' + parser(newDate).trim()
 			console.log('ferch the other day')
 			data = await fetch(localDate)
@@ -95,7 +96,7 @@ function Home() {
 			</div>
 			<div class="card-content">
 				<span class="card-title activator grey-text text-darken-4">{image.title}<i class="material-icons right">more_vert</i></span>
-				<p><a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">Go to the NASA page</a></p>
+				<p><a href="https://apod.nasa.gov/apod/astropix.html" rel="noopener noreferrer" target="_blank">Go to the NASA page</a></p>
 			</div>
 			<div class="card-reveal">
 				<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
