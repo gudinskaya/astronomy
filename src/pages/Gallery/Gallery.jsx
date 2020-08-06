@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import Picture from '../../components/Picture/Picture'
+import "./Gallery.css"
 
 function Gallery() {
-	function Last7Days() {
+	function Last9Days() {
 		const result = []
-		for (let i = 1; i < 8; i++) {
+		for (let i = 2; i < 11; i++) {
 			let d = new Date()
 			d.setDate(d.getDate() - i)
 			result.push(d.toISOString())
@@ -13,13 +14,17 @@ function Gallery() {
 		return (result)
 	}
 	return (
-		<>
-			<h1>Pictures of the last week</h1>
-			{Last7Days().map(date => {
-				console.log(date.substring(0, 10), "привет со дна")
-				return <Picture date={date.substring(0, 10)}/>
-			})}
-		</>
+		<div className='gallery-container'>
+			<h1 className="gallery-title">Pictures of the last week</h1>
+			<div className="gallery" >
+					{Last9Days().map(date => {
+						return <Picture date={date.substring(0, 10)} />
+					})}
+				</div>
+			</div>
+
+
+
 	)
 }
 export default Gallery

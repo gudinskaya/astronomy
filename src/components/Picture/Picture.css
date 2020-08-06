@@ -1,0 +1,29 @@
+.pic {
+  display: block;
+  width: 100%;
+  position: relative;
+  flex: 1 0 42rem;
+  color: #fff;
+  cursor: pointer;
+  object-fit: cover;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+/* .pic-container {
+	display: block;
+	width: 100%;
+} */
+
+/* @supports (display: grid) { */
+/* .products {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 300px);
+			grid-gap: 20px;
+			margin: 0px;
+	} */
+/* .pic {
+			width: initial;
+			margin: 0px;
+	}
+} */
