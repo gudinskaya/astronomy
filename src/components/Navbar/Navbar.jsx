@@ -5,7 +5,7 @@ import './Navbar.css'
 function Navbar() {
   return (
     <>
-      <nav>
+      <nav className="nawbar">
         <div class="nav-wrapper teal darken-1 px1">
           <a href="/" className="brand-logo left" >APOD</a>
           <ul className="links right">
