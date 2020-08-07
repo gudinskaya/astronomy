@@ -1,14 +1,17 @@
 import React from 'react'
+import './Footer.css'
+import GHImage from './GitHub.png'
 
 function Footer() {
   return (
     <>
-      <footer class="page-footer teal darken-1 footer">
-        <div class="footer-copyright">
-          <div class="container">
-            © 2020 Anna Gudinskaya
-            <a class="grey-text text-lighten-4 right" target="_blank" rel="noopener noreferrer" href="https://github.com/gudinskaya">My Github</a>
-            {/* <img src="/astronomy/public/GitHub.png" className="image"></img> */}
+      <footer className="page-footer teal darken-1 footer">
+        <div className="footer-copyright">
+          <div className="footer-container container">
+            <p>© 2020 Anna Gudinskaya</p>
+            <a className="grey-text text-lighten-4 right" target="_blank" rel="noopener noreferrer" href="https://github.com/gudinskaya">
+              <img className="gh-link" src={GHImage} />
+            </a>
           </div>
         </div>
       </footer>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Picture from '../../components/Picture/Picture'
 import "./Gallery.css"
 
@@ -16,9 +16,9 @@ function Gallery() {
   return (
     <div className='gallery-container'>
       <h1 className="gallery-title">Pictures of the last days</h1>
-      <div className="gallery" >
+      <div className="gallery">
         {Last9Days().map(date => {
-          return <Picture date={date.substring(0, 10)} />
+          return <Picture key={`potld-${date}`} date={date.substring(0, 10)} />
         })}
       </div>
     </div>

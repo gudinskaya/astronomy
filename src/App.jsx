@@ -6,17 +6,20 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 
 function App() {
+	const baseURL = process.env.BASE_URL || ''
+
 	return (
 		<Router>
 			<div>
 				<Navbar />
 				<Switch>
-					<Route path="/" exact component={Home} />
-					<Route path="/gallery" component={Gallery} />
+					<Route path={`${baseURL}/`} exact component={Home} />
+					<Route path={`${baseURL}/gallery`} component={Gallery} />
 				</Switch>
 				<Footer/>
 			</div>
 		</Router>
 	)
 }
+
 export default App

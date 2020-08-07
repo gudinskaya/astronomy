@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav className="nawbar">
-        <div class="nav-wrapper teal darken-1 px1">
+        <div className="nav-wrapper teal darken-1 px1">
           <a href="/" className="brand-logo left" >APOD</a>
           <ul className="links right">
             <Link to='/'>Home</Link>
