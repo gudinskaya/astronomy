@@ -1,14 +1,14 @@
 
 .gallery {
-	/* width: 100%; */
-	/* display: -webkit-box;
-	display: -ms-flexbox; */
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	/* -webkit-box-pack: center;
-	-ms-flex-pack: center; */
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	align-items: center;
-	/* -ms-flex-wrap: wrap; */
+	-ms-flex-wrap: wrap;
 	flex-direction: row;
 	flex-wrap: wrap;
 	max-width: 1200px;
