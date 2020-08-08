@@ -25,13 +25,10 @@ function Home() {
   const fetchImage = async (newDate) => {
     let data = ''
     if (newDate === todayDate) {
-      console.log('ferch today')
       data = await fetch(url)
     } else {
-      console.log(newDate)
       const formatDate = new Date(newDate).toISOString().substring(0, 10)
       const localDate = url + '&date=' + formatDate.trim()
-      console.log('ferch the other day')
       data = await fetch(localDate)
     }
     const image = await data.json()
@@ -40,7 +37,7 @@ function Home() {
   }
 
   const [date, setMyDate] = useState(new Date())
-
+  console.log(date)
   const [isImage, setIsImage] = useState(null)
 
   const checkImage = (image) => {
@@ -65,7 +62,7 @@ function Home() {
       <div className="card img-card">
         <div className="card-image waves-effect waves-block waves-light">
           {isImage
-            ? <iframe className="video" src={image.url} />
+            ? <iframe title="astronomy video of the day" className="video" src={image.url} />
             : <img alt="astronomy pic of the day" className="activator" src={image.url} />
           }
         </div>

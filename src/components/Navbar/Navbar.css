@@ -13,13 +13,13 @@
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 573px) {
   .logo-decktop {
     display: none !important;
   }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 574px) {
   .logo-mobile {
     display: none !important;
   }

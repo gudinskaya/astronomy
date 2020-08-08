@@ -4,7 +4,6 @@ import './Navbar.css'
 
 function Navbar() {
 	const baseURL = process.env.BASE_URL || '/astronomy'
-	console.log(baseURL)
 
   return (
     <>

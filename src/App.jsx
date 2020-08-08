@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer'
 
 function App() {
 	const baseURL = process.env.BASE_URL || '/astronomy'
-	console.log(baseURL)
 
 	return (
 		<Router>
