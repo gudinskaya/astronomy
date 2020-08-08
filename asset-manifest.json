@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/astronomy/static/css/main.92d1377f.chunk.css",
-    "main.js": "/astronomy/static/js/main.746aebe5.chunk.js",
-    "main.js.map": "/astronomy/static/js/main.746aebe5.chunk.js.map",
+    "main.css": "/astronomy/static/css/main.ad51d584.chunk.css",
+    "main.js": "/astronomy/static/js/main.f2965601.chunk.js",
+    "main.js.map": "/astronomy/static/js/main.f2965601.chunk.js.map",
     "runtime-main.js": "/astronomy/static/js/runtime-main.e43f9e17.js",
     "runtime-main.js.map": "/astronomy/static/js/runtime-main.e43f9e17.js.map",
     "static/css/2.8dbe6964.chunk.css": "/astronomy/static/css/2.8dbe6964.chunk.css",
     "static/js/2.bb13a5fc.chunk.js": "/astronomy/static/js/2.bb13a5fc.chunk.js",
     "static/js/2.bb13a5fc.chunk.js.map": "/astronomy/static/js/2.bb13a5fc.chunk.js.map",
     "index.html": "/astronomy/index.html",
-    "precache-manifest.a2b11da96e8c3944f9e04805b98bc89b.js": "/astronomy/precache-manifest.a2b11da96e8c3944f9e04805b98bc89b.js",
+    "precache-manifest.aba900daecb3fbf4a4e1b376ac146d47.js": "/astronomy/precache-manifest.aba900daecb3fbf4a4e1b376ac146d47.js",
     "service-worker.js": "/astronomy/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/astronomy/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.92d1377f.chunk.css.map": "/astronomy/static/css/main.92d1377f.chunk.css.map",
+    "static/css/main.ad51d584.chunk.css.map": "/astronomy/static/css/main.ad51d584.chunk.css.map",
     "static/js/2.bb13a5fc.chunk.js.LICENSE.txt": "/astronomy/static/js/2.bb13a5fc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e43f9e17.js",
     "static/css/2.8dbe6964.chunk.css",
     "static/js/2.bb13a5fc.chunk.js",
-    "static/css/main.92d1377f.chunk.css",
-    "static/js/main.746aebe5.chunk.js"
+    "static/css/main.ad51d584.chunk.css",
+    "static/js/main.f2965601.chunk.js"
   ]
 }
