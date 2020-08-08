@@ -9,13 +9,7 @@ function Home() {
   const todayDate = new Date()
   const firstDay = new Date('1995-06-16')
 
-  useEffect(() => {
-    if (localStorage.getItem('date') === null) {
-      fetchImage(todayDate)
-    } else {
-      fetchImage(localStorage.getItem('date'))
-    }
-  }, [])
+  
 
   const [image, setImage] = useState(' ')
 
@@ -56,13 +50,23 @@ function Home() {
       image.url.includes('youtube') ? setIsImage(true) : setIsImage(false)
     }  
   }
+  // const error = () => {
+  //   alert("Oops! Choose anouther date or visit site later, because NASA doesn't let us to load this pic\nSorry, dude")
+  // }
+  useEffect(() => {
+    if (localStorage.getItem('date') === null) {
+      fetchImage(todayDate)
+    } else {
+      fetchImage(localStorage.getItem('date'))
+    }
+  }, [])
 
   return (
     <div className="card img-card">
       <div className="card-image waves-effect waves-block waves-light">
         {isImage
           ? <iframe className="video" src={image.url} />
-          : <img className="activator" src={image.url} />
+          : <img alt="astronomy pic of the day" className="activator" src={image.url} />
         }
       </div>
       <div className="card-content">
@@ -80,7 +84,7 @@ function Home() {
         className="calendar"
         onChange={date => setMyDate(date)}
         onClickDay={date => changeState(date)}
-        value={new Date(localStorage.getItem('date'))}
+        value={localStorage.getItem('date') ? new Date(localStorage.getItem('date')) : todayDate}
       />
     </div>
   )
