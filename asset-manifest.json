@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/astronomy/static/css/main.92d1377f.chunk.css",
-    "main.js": "/astronomy/static/js/main.65280462.chunk.js",
-    "main.js.map": "/astronomy/static/js/main.65280462.chunk.js.map",
+    "main.js": "/astronomy/static/js/main.746aebe5.chunk.js",
+    "main.js.map": "/astronomy/static/js/main.746aebe5.chunk.js.map",
     "runtime-main.js": "/astronomy/static/js/runtime-main.e43f9e17.js",
     "runtime-main.js.map": "/astronomy/static/js/runtime-main.e43f9e17.js.map",
     "static/css/2.8dbe6964.chunk.css": "/astronomy/static/css/2.8dbe6964.chunk.css",
     "static/js/2.bb13a5fc.chunk.js": "/astronomy/static/js/2.bb13a5fc.chunk.js",
     "static/js/2.bb13a5fc.chunk.js.map": "/astronomy/static/js/2.bb13a5fc.chunk.js.map",
     "index.html": "/astronomy/index.html",
-    "precache-manifest.5dd31e6558c05294f1a11d1ebc9c6b97.js": "/astronomy/precache-manifest.5dd31e6558c05294f1a11d1ebc9c6b97.js",
+    "precache-manifest.a2b11da96e8c3944f9e04805b98bc89b.js": "/astronomy/precache-manifest.a2b11da96e8c3944f9e04805b98bc89b.js",
     "service-worker.js": "/astronomy/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/astronomy/static/css/2.8dbe6964.chunk.css.map",
     "static/css/main.92d1377f.chunk.css.map": "/astronomy/static/css/main.92d1377f.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.8dbe6964.chunk.css",
     "static/js/2.bb13a5fc.chunk.js",
     "static/css/main.92d1377f.chunk.css",
-    "static/js/main.65280462.chunk.js"
+    "static/js/main.746aebe5.chunk.js"
   ]
 }

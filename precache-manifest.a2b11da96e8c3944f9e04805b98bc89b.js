@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3062c5d9c4a30587eaaf7501447cc54",
+    "revision": "71058d77c4d048cc4b32da08024ca4d3",
     "url": "/astronomy/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/astronomy/static/css/2.8dbe6964.chunk.css"
   },
   {
-    "revision": "de094b5f96e820ddc561",
+    "revision": "f984ecaaefcdf6314c0e",
     "url": "/astronomy/static/css/main.92d1377f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/astronomy/static/js/2.bb13a5fc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de094b5f96e820ddc561",
-    "url": "/astronomy/static/js/main.65280462.chunk.js"
+    "revision": "f984ecaaefcdf6314c0e",
+    "url": "/astronomy/static/js/main.746aebe5.chunk.js"
   },
   {
     "revision": "ca83fb24016c23dbfffb",
