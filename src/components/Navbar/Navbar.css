@@ -12,6 +12,7 @@
   user-select: none;
 }
 
+
 @media (max-width: 425px) {
   .logo-decktop {
     display: none !important;
@@ -22,4 +23,8 @@
   .logo-mobile {
     display: none !important;
   }
+}
+
+.brand-logo {
+  margin-left: 15px;
 }
