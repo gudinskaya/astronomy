@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 
 function App() {
-	const baseURL = process.env.BASE_URL || ''
+	const baseURL = process.env.BASE_URL || '/astronomy'
+	console.log(baseURL)
 
 	return (
 		<Router>

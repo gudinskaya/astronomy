@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 function Navbar() {
+	const baseURL = process.env.BASE_URL || '/astronomy'
+	console.log(baseURL)
+
   return (
     <>
       <nav className="nawbar">
         <div className="nav-wrapper teal darken-1 px1">
-          <a href="/" className="brand-logo left" >APOD</a>
+          <a href={baseURL} className="brand-logo left" >APOD</a>
           <ul className="links right">
-            <Link to='/'>Home</Link>
-            <Link to='/gallery'>Gallery</Link>
+            <Link to={baseURL}>Home</Link>
+            <Link to={`${baseURL}/gallery`}>Gallery</Link>
           </ul>
         </div>
       </nav>
