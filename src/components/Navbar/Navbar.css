@@ -11,3 +11,15 @@
 .nawbar {
   user-select: none;
 }
+
+@media (max-width: 425px) {
+  .logo-decktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 426px) {
+  .logo-mobile {
+    display: none !important;
+  }
+}

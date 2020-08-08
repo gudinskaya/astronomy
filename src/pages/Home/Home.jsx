@@ -9,7 +9,7 @@ function Home() {
   const todayDate = new Date()
   const firstDay = new Date('1995-06-16')
 
-  
+
 
   const [image, setImage] = useState(' ')
 
@@ -44,11 +44,11 @@ function Home() {
   const [isImage, setIsImage] = useState(null)
 
   const checkImage = (image) => {
-    if(image === null) {
+    if (image === null) {
       alert("Too many requests ;( \nPlease, try later")
     } else {
       image.url.includes('youtube') ? setIsImage(true) : setIsImage(false)
-    }  
+    }
   }
   // const error = () => {
   //   alert("Oops! Choose anouther date or visit site later, because NASA doesn't let us to load this pic\nSorry, dude")
@@ -62,31 +62,31 @@ function Home() {
   }, [])
 
   return (
-    <div className="card img-card">
-      <div className="card-image waves-effect waves-block waves-light">
-        {isImage
-          ? <iframe className="video" src={image.url} />
-          : <img alt="astronomy pic of the day" className="activator" src={image.url} />
-        }
-      </div>
-      <div className="card-content">
+      <div className="card img-card">
+        <div className="card-image waves-effect waves-block waves-light">
+          {isImage
+            ? <iframe className="video" src={image.url} />
+            : <img alt="astronomy pic of the day" className="activator" src={image.url} />
+          }
+        </div>
+        <div className="card-content">
 
-        <span className="card-title activator grey-text text-darken-4">
-          {image.title}
-        </span>
-        <p><a href="https://apod.nasa.gov/apod/astropix.html" rel="noopener noreferrer" target="_blank">Go to the NASA page</a></p>
+          <span className="card-title activator grey-text text-darken-4">
+            {image.title}
+          </span>
+          <p><a href="https://apod.nasa.gov/apod/astropix.html" rel="noopener noreferrer" target="_blank">Go to the NASA page</a></p>
+        </div>
+        <div className="card-reveal">
+          <span className="card-title activator grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+        <Calendar
+          className="calendar"
+          onChange={date => setMyDate(date)}
+          onClickDay={date => changeState(date)}
+          value={localStorage.getItem('date') ? new Date(localStorage.getItem('date')) : todayDate}
+        />
       </div>
-      <div className="card-reveal">
-        <span className="card-title activator grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
-        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-      </div>
-      <Calendar
-        className="calendar"
-        onChange={date => setMyDate(date)}
-        onClickDay={date => changeState(date)}
-        value={localStorage.getItem('date') ? new Date(localStorage.getItem('date')) : todayDate}
-      />
-    </div>
   )
 }
 export default Home
